@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Parse.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Gradus.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>mopub-ios-sdk.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>63EE497551189FCD50C69825A00F14F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>708E01B006A9F88B3C13711562282B5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7223C31137802F98917B76932485D10B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8A759F57254B6094CF99273E5ECEE8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

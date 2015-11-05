@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		892F913C6BB7414A693995FD /* Pods_Gradus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B2EDA717919CF4B8DA1D5D /* Pods_Gradus.framework */; };
+		A94FAE851BE48D4400D980CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94FAE841BE48D4400D980CA /* Assets.xcassets */; };
+		A94FAE881BE48D4400D980CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94FAE861BE48D4400D980CA /* LaunchScreen.storyboard */; };
+		A94FAE931BE48D4500D980CA /* GradusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FAE921BE48D4500D980CA /* GradusTests.swift */; };
+		A94FAE9E1BE48D4500D980CA /* GradusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FAE9D1BE48D4500D980CA /* GradusUITests.swift */; };
+		A94FAEB61BE48FB400D980CA /* WelcomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94FAEB51BE48FB400D980CA /* WelcomeStoryboard.storyboard */; };
+		A94FAEBB1BE4908F00D980CA /* GradusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FAEBA1BE4908F00D980CA /* GradusViewModel.swift */; };
+		A94FAEBD1BE490B600D980CA /* GradusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FAEBC1BE490B600D980CA /* GradusViewController.swift */; };
+		A94FAEBF1BE490DE00D980CA /* Gradus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FAEBE1BE490DE00D980CA /* Gradus.swift */; };
+		A94FAEC31BE495E600D980CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FAEC21BE495E600D980CA /* AppDelegate.swift */; };
+		A94FAF0A1BE88A4100D980CA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FAF091BE88A4100D980CA /* WelcomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A94FAE8F1BE48D4500D980CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A94FAE721BE48D4400D980CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94FAE791BE48D4400D980CA;
+			remoteInfo = Gradus;
+		};
+		A94FAE9A1BE48D4500D980CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A94FAE721BE48D4400D980CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94FAE791BE48D4400D980CA;
+			remoteInfo = Gradus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0409970B0539145FED44E9FE /* Pods-Gradus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gradus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gradus/Pods-Gradus.debug.xcconfig"; sourceTree = "<group>"; };
+		A94FAE7A1BE48D4400D980CA /* Gradus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gradus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94FAE841BE48D4400D980CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A94FAE871BE48D4400D980CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A94FAE891BE48D4400D980CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94FAE8E1BE48D4500D980CA /* GradusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94FAE921BE48D4500D980CA /* GradusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradusTests.swift; sourceTree = "<group>"; };
+		A94FAE941BE48D4500D980CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94FAE991BE48D4500D980CA /* GradusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94FAE9D1BE48D4500D980CA /* GradusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradusUITests.swift; sourceTree = "<group>"; };
+		A94FAE9F1BE48D4500D980CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94FAEB51BE48FB400D980CA /* WelcomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeStoryboard.storyboard; sourceTree = "<group>"; };
+		A94FAEBA1BE4908F00D980CA /* GradusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradusViewModel.swift; sourceTree = "<group>"; };
+		A94FAEBC1BE490B600D980CA /* GradusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradusViewController.swift; sourceTree = "<group>"; };
+		A94FAEBE1BE490DE00D980CA /* Gradus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradus.swift; sourceTree = "<group>"; };
+		A94FAEC21BE495E600D980CA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A94FAEC41BE4965600D980CA /* Gradus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gradus-Bridging-Header.h"; sourceTree = "<group>"; };
+		A94FAF091BE88A4100D980CA /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BFA9E61262EDA6F6B49C0F59 /* Pods-Gradus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gradus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gradus/Pods-Gradus.release.xcconfig"; sourceTree = "<group>"; };
+		D8B2EDA717919CF4B8DA1D5D /* Pods_Gradus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gradus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A94FAE771BE48D4400D980CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892F913C6BB7414A693995FD /* Pods_Gradus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94FAE8B1BE48D4500D980CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94FAE961BE48D4500D980CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0A5AD3D568A454B49B0C9DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0409970B0539145FED44E9FE /* Pods-Gradus.debug.xcconfig */,
+				BFA9E61262EDA6F6B49C0F59 /* Pods-Gradus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A94FAE711BE48D4400D980CA = {
+			isa = PBXGroup;
+			children = (
+				A94FAE7C1BE48D4400D980CA /* Gradus */,
+				A94FAE911BE48D4500D980CA /* GradusTests */,
+				A94FAE9C1BE48D4500D980CA /* GradusUITests */,
+				A94FAE7B1BE48D4400D980CA /* Products */,
+				A0A5AD3D568A454B49B0C9DE /* Pods */,
+				D8E1689F005B9C3A5BE401FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A94FAE7B1BE48D4400D980CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAE7A1BE48D4400D980CA /* Gradus.app */,
+				A94FAE8E1BE48D4500D980CA /* GradusTests.xctest */,
+				A94FAE991BE48D4500D980CA /* GradusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A94FAE7C1BE48D4400D980CA /* Gradus */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAEB11BE48F5400D980CA /* ViewModels */,
+				A94FAEAB1BE48EF700D980CA /* Components */,
+				A94FAEAC1BE48EF700D980CA /* Helpers */,
+				A94FAEB01BE48EF700D980CA /* Controllers */,
+				A94FAEAF1BE48EF700D980CA /* Views */,
+				A94FAEAE1BE48EF700D980CA /* Models */,
+				A94FAEC01BE495BF00D980CA /* Extensions */,
+				A94FAEC11BE495BF00D980CA /* Supporting Files */,
+				A94FAE841BE48D4400D980CA /* Assets.xcassets */,
+				A94FAE861BE48D4400D980CA /* LaunchScreen.storyboard */,
+				A94FAE891BE48D4400D980CA /* Info.plist */,
+			);
+			path = Gradus;
+			sourceTree = "<group>";
+		};
+		A94FAE911BE48D4500D980CA /* GradusTests */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAE921BE48D4500D980CA /* GradusTests.swift */,
+				A94FAE941BE48D4500D980CA /* Info.plist */,
+			);
+			path = GradusTests;
+			sourceTree = "<group>";
+		};
+		A94FAE9C1BE48D4500D980CA /* GradusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAE9D1BE48D4500D980CA /* GradusUITests.swift */,
+				A94FAE9F1BE48D4500D980CA /* Info.plist */,
+			);
+			path = GradusUITests;
+			sourceTree = "<group>";
+		};
+		A94FAEAB1BE48EF700D980CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A94FAEAC1BE48EF700D980CA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A94FAEAE1BE48EF700D980CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAEB71BE4904100D980CA /* Base */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A94FAEAF1BE48EF700D980CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAEB31BE48F5F00D980CA /* Welcome/Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A94FAEB01BE48EF700D980CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAEB81BE4905600D980CA /* Base */,
+				A94FAEB41BE48F6A00D980CA /* Welcome/Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A94FAEB11BE48F5400D980CA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAEB91BE4905A00D980CA /* Base */,
+				A94FAEB21BE48F5400D980CA /* Welcome */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A94FAEB21BE48F5400D980CA /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		A94FAEB31BE48F5F00D980CA /* Welcome/Login */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAEB51BE48FB400D980CA /* WelcomeStoryboard.storyboard */,
+			);
+			name = Welcome/Login;
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		A94FAEB41BE48F6A00D980CA /* Welcome/Login */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAF091BE88A4100D980CA /* WelcomeViewController.swift */,
+			);
+			name = Welcome/Login;
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		A94FAEB71BE4904100D980CA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAEBE1BE490DE00D980CA /* Gradus.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A94FAEB81BE4905600D980CA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAEBC1BE490B600D980CA /* GradusViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A94FAEB91BE4905A00D980CA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAEBA1BE4908F00D980CA /* GradusViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A94FAEC01BE495BF00D980CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A94FAEC11BE495BF00D980CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94FAEC21BE495E600D980CA /* AppDelegate.swift */,
+				A94FAEC41BE4965600D980CA /* Gradus-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8E1689F005B9C3A5BE401FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8B2EDA717919CF4B8DA1D5D /* Pods_Gradus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A94FAE791BE48D4400D980CA /* Gradus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94FAEA21BE48D4500D980CA /* Build configuration list for PBXNativeTarget "Gradus" */;
+			buildPhases = (
+				996DF543C3E88F5979C3A445 /* Check Pods Manifest.lock */,
+				A94FAE761BE48D4400D980CA /* Sources */,
+				A94FAE771BE48D4400D980CA /* Frameworks */,
+				A94FAE781BE48D4400D980CA /* Resources */,
+				92036975C452682B052042CF /* Embed Pods Frameworks */,
+				E4F6F3E6726C99E929A00A4B /* Copy Pods Resources */,
+				A9DC34941BE9EC7B00F87E85 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gradus;
+			productName = Gradus;
+			productReference = A94FAE7A1BE48D4400D980CA /* Gradus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A94FAE8D1BE48D4500D980CA /* GradusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94FAEA51BE48D4500D980CA /* Build configuration list for PBXNativeTarget "GradusTests" */;
+			buildPhases = (
+				A94FAE8A1BE48D4500D980CA /* Sources */,
+				A94FAE8B1BE48D4500D980CA /* Frameworks */,
+				A94FAE8C1BE48D4500D980CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A94FAE901BE48D4500D980CA /* PBXTargetDependency */,
+			);
+			name = GradusTests;
+			productName = GradusTests;
+			productReference = A94FAE8E1BE48D4500D980CA /* GradusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A94FAE981BE48D4500D980CA /* GradusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94FAEA81BE48D4500D980CA /* Build configuration list for PBXNativeTarget "GradusUITests" */;
+			buildPhases = (
+				A94FAE951BE48D4500D980CA /* Sources */,
+				A94FAE961BE48D4500D980CA /* Frameworks */,
+				A94FAE971BE48D4500D980CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A94FAE9B1BE48D4500D980CA /* PBXTargetDependency */,
+			);
+			name = GradusUITests;
+			productName = GradusUITests;
+			productReference = A94FAE991BE48D4500D980CA /* GradusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A94FAE721BE48D4400D980CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Sledgedev;
+				TargetAttributes = {
+					A94FAE791BE48D4400D980CA = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					A94FAE8D1BE48D4500D980CA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = A94FAE791BE48D4400D980CA;
+					};
+					A94FAE981BE48D4500D980CA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = A94FAE791BE48D4400D980CA;
+					};
+				};
+			};
+			buildConfigurationList = A94FAE751BE48D4400D980CA /* Build configuration list for PBXProject "Gradus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A94FAE711BE48D4400D980CA;
+			productRefGroup = A94FAE7B1BE48D4400D980CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A94FAE791BE48D4400D980CA /* Gradus */,
+				A94FAE8D1BE48D4500D980CA /* GradusTests */,
+				A94FAE981BE48D4500D980CA /* GradusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A94FAE781BE48D4400D980CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94FAEB61BE48FB400D980CA /* WelcomeStoryboard.storyboard in Resources */,
+				A94FAE881BE48D4400D980CA /* LaunchScreen.storyboard in Resources */,
+				A94FAE851BE48D4400D980CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94FAE8C1BE48D4500D980CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94FAE971BE48D4500D980CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92036975C452682B052042CF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gradus/Pods-Gradus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		996DF543C3E88F5979C3A445 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9DC34941BE9EC7B00F87E85 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 69edf51aa1ca21133687e2e17b9a4f6db7a30231 6e5f4296068bccea28f308abae2288dbddf9f85cbbffb4fe922cb84a54003b0e";
+		};
+		E4F6F3E6726C99E929A00A4B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gradus/Pods-Gradus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A94FAE761BE48D4400D980CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94FAEBF1BE490DE00D980CA /* Gradus.swift in Sources */,
+				A94FAEBB1BE4908F00D980CA /* GradusViewModel.swift in Sources */,
+				A94FAF0A1BE88A4100D980CA /* WelcomeViewController.swift in Sources */,
+				A94FAEC31BE495E600D980CA /* AppDelegate.swift in Sources */,
+				A94FAEBD1BE490B600D980CA /* GradusViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94FAE8A1BE48D4500D980CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94FAE931BE48D4500D980CA /* GradusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94FAE951BE48D4500D980CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94FAE9E1BE48D4500D980CA /* GradusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A94FAE901BE48D4500D980CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94FAE791BE48D4400D980CA /* Gradus */;
+			targetProxy = A94FAE8F1BE48D4500D980CA /* PBXContainerItemProxy */;
+		};
+		A94FAE9B1BE48D4500D980CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94FAE791BE48D4400D980CA /* Gradus */;
+			targetProxy = A94FAE9A1BE48D4500D980CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A94FAE861BE48D4400D980CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94FAE871BE48D4400D980CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A94FAEA01BE48D4500D980CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A94FAEA11BE48D4500D980CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A94FAEA31BE48D4500D980CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0409970B0539145FED44E9FE /* Pods-Gradus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Gradus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sledgedev.Gradus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gradus/Supporting Files/Gradus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A94FAEA41BE48D4500D980CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA9E61262EDA6F6B49C0F59 /* Pods-Gradus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Gradus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sledgedev.Gradus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gradus/Supporting Files/Gradus-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A94FAEA61BE48D4500D980CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GradusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sledgedev.GradusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradus.app/Gradus";
+			};
+			name = Debug;
+		};
+		A94FAEA71BE48D4500D980CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GradusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sledgedev.GradusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gradus.app/Gradus";
+			};
+			name = Release;
+		};
+		A94FAEA91BE48D4500D980CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GradusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sledgedev.GradusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Gradus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A94FAEAA1BE48D4500D980CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GradusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sledgedev.GradusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Gradus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A94FAE751BE48D4400D980CA /* Build configuration list for PBXProject "Gradus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94FAEA01BE48D4500D980CA /* Debug */,
+				A94FAEA11BE48D4500D980CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94FAEA21BE48D4500D980CA /* Build configuration list for PBXNativeTarget "Gradus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94FAEA31BE48D4500D980CA /* Debug */,
+				A94FAEA41BE48D4500D980CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94FAEA51BE48D4500D980CA /* Build configuration list for PBXNativeTarget "GradusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94FAEA61BE48D4500D980CA /* Debug */,
+				A94FAEA71BE48D4500D980CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94FAEA81BE48D4500D980CA /* Build configuration list for PBXNativeTarget "GradusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94FAEA91BE48D4500D980CA /* Debug */,
+				A94FAEAA1BE48D4500D980CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A94FAE721BE48D4400D980CA /* Project object */;
+}

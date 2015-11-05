@@ -1,0 +1,35 @@
+PODS:
+  - Bolts/Tasks (1.4.0)
+  - Crashlytics (3.3.4)
+  - Digits (1.12.0)
+  - Fabric (1.5.5):
+    - Fabric/Base (= 1.5.5)
+  - Fabric/Base (1.5.5)
+  - mopub-ios-sdk (4.0.0):
+    - mopub-ios-sdk/MoPubSDK (= 4.0.0)
+  - mopub-ios-sdk/MoPubSDK (4.0.0)
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
+  - TwitterCore (1.12.0)
+  - TwitterKit (1.12.0)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Digits
+  - Fabric
+  - mopub-ios-sdk
+  - Parse
+  - TwitterCore
+  - TwitterKit
+
+SPEC CHECKSUMS:
+  Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
+  Crashlytics: 41c082440d2e14da444186fff65e79c0b4b35d4c
+  Digits: b443a43657c6cbaa6b31fedddc0e8c15133a978f
+  Fabric: 190bf1a6eb65f7500de1347d027d2e59a7e53db1
+  mopub-ios-sdk: 9a48533323861eb73bed62bc8a35468f72500be3
+  Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
+  TwitterCore: a1feadb793512962003ed2bad23e846c8daa4efd
+  TwitterKit: c27e7b997cd82d5c626fcfd8b1dead1e15dac7ca
+
+COCOAPODS: 0.39.0

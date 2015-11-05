@@ -1,0 +1,6 @@
+framework module Pods_Gradus {
+  umbrella header "Pods-Gradus-umbrella.h"
+
+  export *
+  module * { export * }
+}
