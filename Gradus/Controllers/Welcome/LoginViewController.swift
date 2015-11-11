@@ -1,19 +1,18 @@
 //
-//  WelcomeViewController.swift
+//  LoginViewController.swift
 //  Gradus
 //
-//  Created by Barrett Breshears on 11/2/15.
+//  Created by Barrett Breshears on 11/8/15.
 //  Copyright © 2015 Sledgedev. All rights reserved.
 //
 
 import UIKit
-import Parse
 
-class WelcomeViewController: GradusViewController {
+class LoginViewController: GradusViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated:false)
+
         // Do any additional setup after loading the view.
     }
 
@@ -23,6 +22,10 @@ class WelcomeViewController: GradusViewController {
     }
     
 
+    @IBAction func goToLogin(sender:UIButton){
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     /*
     // MARK: - Navigation
 
