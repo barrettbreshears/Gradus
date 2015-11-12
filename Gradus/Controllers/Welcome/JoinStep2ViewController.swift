@@ -9,19 +9,22 @@
 import UIKit
 import Parse
 
-class JoinStep2ViewController: GradusViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
+class JoinStep2ViewController: GradusViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
     
     // IBOutlets
     @IBOutlet var addImageButton:UIButton!
     @IBOutlet var username:UITextField!
     @IBOutlet var password:UITextField!
     @IBOutlet var usernameErrorLabel:UILabel!
-    @IBOutlet var interestsCollection:UICollectionView!
+    @IBOutlet var interestsList:TagListView!
+    @IBOutlet var createAccountBtn:UIButton!
     
     // properties
     var interests:[Interest] = [Interest]()
     var verifiedEmail:String!
     var imagePickerController:UIImagePickerController?
+    var selectedInterests:[Interest] = [Interest]()
+    var selectedImage:UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +33,11 @@ class JoinStep2ViewController: GradusViewController, UINavigationControllerDeleg
         addImageButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         
         username.addTarget(self, action: Selector("checkUsername"), forControlEvents: UIControlEvents.EditingChanged)
+        createAccountBtn.layer.borderColor = UIColor.whiteColor().CGColor
+        createAccountBtn.layer.borderWidth = 1
         
+        let tapView = UITapGestureRecognizer(target: self, action: Selector("hideKeyboard"))
+        self.view.addGestureRecognizer(tapView)
         
         getInterestData()
     }
@@ -40,6 +47,10 @@ class JoinStep2ViewController: GradusViewController, UINavigationControllerDeleg
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.createPurpleGradient()
+    }
     
     @IBAction func addImage(){
         
@@ -81,7 +92,7 @@ class JoinStep2ViewController: GradusViewController, UINavigationControllerDeleg
         
         picker.dismissViewControllerAnimated(true, completion: nil)
         addImageButton.setImage(image, forState: UIControlState.Normal)
-        
+        self.selectedImage = image
         
     }
     
@@ -121,29 +132,86 @@ class JoinStep2ViewController: GradusViewController, UINavigationControllerDeleg
             }else{
                 
                 self.interests = interests as! [Interest]
-                self.interestsCollection.reloadData()
-                
+                self.addInterests()
             }
             
         }
         
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        
-        let currentInterest = self.interests[indexPath.row]
-        
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("interestCell", forIndexPath: indexPath) as! InterestCollectionViewCell
-        
-        
-        cell.interestLabel.text = currentInterest.name
-        cell.deselect()
-        
-        return cell
+    func addInterests(){
+        for interest in interests{
+            interestsList.addTag(interest.name, target: self, tapAction: Selector("interestTap:"), longPressAction: Selector("longPress"), backgroundColor: UIColor.clearColor(), textColor: UIColor.whiteColor(), interest: interest)
+        }
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return interests.count
+    func interestTap(sender:UITapGestureRecognizer){
+        
+        let interestLabel = sender.view as! InterestLabel
+        
+        if interestLabel.selected {
+            
+            for var i = 0; i < interests.count; i++ {
+                if interestLabel.text == interests[i].name {
+                    self.interests.removeAtIndex(i)
+                    interestLabel.setUnselected()
+                }
+               
+            }
+            
+            
+        }else{
+            self.selectedInterests.append(interestLabel.interest)
+            interestLabel.setSelected()
+        }
+        
+        
+    }
+    
+    @IBAction func createAccount(){
+    
+        if self.validateForm() {
+            let newUser = User()
+            newUser.email = self.verifiedEmail
+            newUser.username = self.username.text
+            newUser.password = self.password.text
+            newUser.interests = self.selectedInterests
+            if let profileImage = selectedImage {
+                let imageData = NSData(data:UIImagePNGRepresentation(profileImage)!)
+                newUser.profilePicture = PFFile(data: imageData)!
+            }
+            
+            newUser.signUpInBackgroundWithBlock({ (success, error ) -> Void in
+                if error == nil && success {
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    let viewController = appDelegate.window?.rootViewController as! UINavigationController
+                    
+                    let tabBar = MainTabBarViewController()
+                    viewController.pushViewController(tabBar, animated: true)
+                }
+                
+            })
+        }
+        
+    }
+    
+    func validateForm() -> Bool {
+        if username.text == "" || password.text == "" {
+            self.showWarning("Uh Oh!", warningMessage: "Username and password are required")
+            return false
+        }
+        
+        return true
+    }
+    
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func hideKeyboard(){
+        self.view.endEditing(true)
     }
     /*
     // MARK: - Navigation

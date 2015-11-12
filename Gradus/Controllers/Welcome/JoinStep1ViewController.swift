@@ -35,6 +35,10 @@ class JoinStep1ViewController: GradusViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.createPurpleGradient()
+    }
     
     func textFieldDidChange(){
         if Validation().validateEmail(emailTextField.text!){

@@ -363,7 +363,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join with email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsG-5q-Vfd">
-                                <rect key="frame" x="230" y="128" width="140.5" height="29"/>
+                                <rect key="frame" x="230" y="128" width="141" height="29"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -482,6 +482,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="lX9-eR-var" id="7Rf-VS-TOh"/>
+                                </connections>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wws-UA-FYT">
                                 <rect key="frame" x="538" y="147" width="33" height="16"/>
@@ -497,90 +500,54 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AIt-XW-fDW">
-                                <rect key="frame" x="20" y="251" width="560" height="152"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XV1-fA-I7u" customClass="TagListView" customModule="Gradus" customModuleProvider="target">
+                                <rect key="frame" x="20" y="251" width="560" height="258"/>
                                 <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="hIV-2w-rLA"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v9U-zO-0Db">
-                                    <size key="itemSize" width="117" height="30"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="interestCell" id="WId-Fv-u3x" customClass="InterestCollectionViewCell" customModule="Gradus" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="117" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="117" height="30"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvf-CA-wwM">
-                                                    <rect key="frame" x="8" y="0.0" width="101" height="30"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="uvf-CA-wwM" secondAttribute="bottom" id="DKW-ff-YuX"/>
-                                            <constraint firstItem="uvf-CA-wwM" firstAttribute="centerX" secondItem="WId-Fv-u3x" secondAttribute="centerX" id="LkJ-zc-VMp"/>
-                                            <constraint firstItem="uvf-CA-wwM" firstAttribute="centerY" secondItem="WId-Fv-u3x" secondAttribute="centerY" id="UqT-F1-M0A"/>
-                                            <constraint firstItem="uvf-CA-wwM" firstAttribute="top" secondItem="WId-Fv-u3x" secondAttribute="top" id="uoA-jF-gN4"/>
-                                            <constraint firstItem="uvf-CA-wwM" firstAttribute="leading" secondItem="WId-Fv-u3x" secondAttribute="leading" constant="8" id="vDG-32-Jfg"/>
-                                            <constraint firstAttribute="trailing" secondItem="uvf-CA-wwM" secondAttribute="trailing" constant="8" id="wzY-qr-8Yk"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="LkJ-zc-VMp"/>
-                                                <exclude reference="UqT-F1-M0A"/>
-                                            </mask>
-                                        </variation>
-                                        <connections>
-                                            <outlet property="interestLabel" destination="uvf-CA-wwM" id="UYE-6g-wFQ"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcH-mH-WhC">
+                                <rect key="frame" x="20" y="517" width="560" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <outlet property="dataSource" destination="lX9-eR-var" id="1FL-by-LgS"/>
-                                    <outlet property="delegate" destination="lX9-eR-var" id="CxH-B3-cv4"/>
+                                    <action selector="createAccount" destination="lX9-eR-var" eventType="touchUpInside" id="BhL-1q-gMg"/>
                                 </connections>
-                            </collectionView>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.28235294119999998" green="0.0" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Mdc-aK-G4v" firstAttribute="leading" secondItem="vnp-xb-2qp" secondAttribute="leadingMargin" constant="-20" id="0su-Pk-JZO"/>
                             <constraint firstItem="tlb-A6-1dt" firstAttribute="top" secondItem="Mdc-aK-G4v" secondAttribute="bottom" id="1Bq-On-e88"/>
+                            <constraint firstItem="gcH-mH-WhC" firstAttribute="leading" secondItem="vnp-xb-2qp" secondAttribute="leadingMargin" id="2n0-zj-Elu"/>
                             <constraint firstItem="CEh-Zy-JiK" firstAttribute="centerX" secondItem="vnp-xb-2qp" secondAttribute="centerX" id="5bL-jo-Bpr"/>
                             <constraint firstItem="B1f-uh-w59" firstAttribute="leading" secondItem="vnp-xb-2qp" secondAttribute="leadingMargin" id="763-pF-jcN"/>
                             <constraint firstItem="CEh-Zy-JiK" firstAttribute="top" secondItem="6eb-cP-MHo" secondAttribute="bottom" constant="8" id="9GW-aN-Nke"/>
-                            <constraint firstItem="AIt-XW-fDW" firstAttribute="leading" secondItem="vnp-xb-2qp" secondAttribute="leadingMargin" id="GCy-yU-cZr"/>
+                            <constraint firstItem="XV1-fA-I7u" firstAttribute="top" secondItem="72J-GW-avT" secondAttribute="bottom" constant="8" id="HRm-Pn-u3E"/>
+                            <constraint firstItem="gcH-mH-WhC" firstAttribute="trailing" secondItem="vnp-xb-2qp" secondAttribute="trailingMargin" id="Ltf-t3-59U"/>
+                            <constraint firstItem="gcH-mH-WhC" firstAttribute="top" secondItem="XV1-fA-I7u" secondAttribute="bottom" constant="8" id="NwW-pp-r3M"/>
                             <constraint firstItem="72J-GW-avT" firstAttribute="leading" secondItem="vnp-xb-2qp" secondAttribute="leadingMargin" id="P1c-GW-AwV"/>
-                            <constraint firstItem="AIt-XW-fDW" firstAttribute="top" secondItem="72J-GW-avT" secondAttribute="bottom" constant="8" id="Plt-44-vUM"/>
                             <constraint firstItem="wws-UA-FYT" firstAttribute="centerY" secondItem="B1f-uh-w59" secondAttribute="centerY" id="RQH-Tf-X65"/>
                             <constraint firstItem="72J-GW-avT" firstAttribute="top" secondItem="oil-lM-I6G" secondAttribute="bottom" constant="8" id="SHA-3R-rgu"/>
                             <constraint firstItem="oil-lM-I6G" firstAttribute="trailing" secondItem="vnp-xb-2qp" secondAttribute="trailingMargin" id="Zag-fe-sZF"/>
                             <constraint firstItem="B1f-uh-w59" firstAttribute="top" secondItem="CEh-Zy-JiK" secondAttribute="bottom" constant="14" id="a21-AE-J2w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Mdc-aK-G4v" secondAttribute="trailing" constant="-20" id="cZ4-rS-RxX"/>
-                            <constraint firstItem="AIt-XW-fDW" firstAttribute="trailing" secondItem="vnp-xb-2qp" secondAttribute="trailingMargin" id="d5w-jn-kaK"/>
                             <constraint firstItem="B1f-uh-w59" firstAttribute="trailing" secondItem="vnp-xb-2qp" secondAttribute="trailingMargin" id="dkU-OK-J18"/>
+                            <constraint firstItem="XV1-fA-I7u" firstAttribute="leading" secondItem="vnp-xb-2qp" secondAttribute="leadingMargin" id="goI-n9-c1C"/>
                             <constraint firstItem="oil-lM-I6G" firstAttribute="top" secondItem="B1f-uh-w59" secondAttribute="bottom" constant="14" id="jdb-If-xPK"/>
+                            <constraint firstItem="Mdc-aK-G4v" firstAttribute="top" secondItem="gcH-mH-WhC" secondAttribute="bottom" constant="8" id="l9r-e5-3U3"/>
+                            <constraint firstItem="gcH-mH-WhC" firstAttribute="top" secondItem="XV1-fA-I7u" secondAttribute="bottom" constant="8" id="lkF-zF-v5A"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wws-UA-FYT" secondAttribute="trailing" constant="9" id="vdT-tB-IXx"/>
                             <constraint firstItem="oil-lM-I6G" firstAttribute="leading" secondItem="vnp-xb-2qp" secondAttribute="leadingMargin" id="wg3-bO-jQd"/>
+                            <constraint firstItem="XV1-fA-I7u" firstAttribute="trailing" secondItem="vnp-xb-2qp" secondAttribute="trailingMargin" id="xM7-0m-ME6"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addImageButton" destination="CEh-Zy-JiK" id="eil-Fl-UBj"/>
-                        <outlet property="interestsCollection" destination="AIt-XW-fDW" id="9Cc-0q-v7J"/>
+                        <outlet property="createAccountBtn" destination="gcH-mH-WhC" id="I8V-oG-x7l"/>
+                        <outlet property="interestsList" destination="XV1-fA-I7u" id="gtB-3N-3P3"/>
                         <outlet property="password" destination="oil-lM-I6G" id="G94-W5-UVX"/>
                         <outlet property="username" destination="B1f-uh-w59" id="vXt-W0-PtJ"/>
                         <outlet property="usernameErrorLabel" destination="wws-UA-FYT" id="dxB-D3-uvm"/>

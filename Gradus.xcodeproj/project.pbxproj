@@ -30,6 +30,15 @@
 		A9DC34A41BEB4FF000F87E85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DC34A21BEB4FF000F87E85 /* User.swift */; };
 		A9F7ACBA1BF1C71E00F1D5B3 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7ACB91BF1C71E00F1D5B3 /* InterestCollectionViewCell.swift */; };
 		A9F7ACBC1BF1C86D00F1D5B3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7ACBB1BF1C86D00F1D5B3 /* UIColorExtension.swift */; };
+		A9F7ACC81BF45F6A00F1D5B3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7ACC71BF45F6A00F1D5B3 /* ListView.swift */; };
+		A9F7ACCA1BF4608300F1D5B3 /* InterestLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7ACC91BF4608300F1D5B3 /* InterestLabel.swift */; };
+		A9F7ACCC1BF46DF200F1D5B3 /* JoinStep2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7ACCB1BF46DF200F1D5B3 /* JoinStep2ViewModel.swift */; };
+		A9F7ACCF1BF46F6F00F1D5B3 /* FeedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F7ACCE1BF46F6F00F1D5B3 /* FeedStoryboard.storyboard */; };
+		A9F7ACD21BF46FA400F1D5B3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7ACD11BF46FA400F1D5B3 /* FeedViewController.swift */; };
+		A9F7ACD51BF4706700F1D5B3 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7ACD41BF4706700F1D5B3 /* MainTabBarViewController.swift */; };
+		A9F7ACD91BF47D6200F1D5B3 /* CreateStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F7ACD81BF47D6200F1D5B3 /* CreateStoryboard.storyboard */; };
+		A9F7ACDB1BF47DFF00F1D5B3 /* NewJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7ACDA1BF47DFF00F1D5B3 /* NewJourneyViewController.swift */; };
+		A9F7ACDE1BF47E7A00F1D5B3 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7ACDD1BF47E7A00F1D5B3 /* Journey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +86,15 @@
 		A9DC34A21BEB4FF000F87E85 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A9F7ACB91BF1C71E00F1D5B3 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
 		A9F7ACBB1BF1C86D00F1D5B3 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A9F7ACC71BF45F6A00F1D5B3 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A9F7ACC91BF4608300F1D5B3 /* InterestLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestLabel.swift; sourceTree = "<group>"; };
+		A9F7ACCB1BF46DF200F1D5B3 /* JoinStep2ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinStep2ViewModel.swift; sourceTree = "<group>"; };
+		A9F7ACCE1BF46F6F00F1D5B3 /* FeedStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FeedStoryboard.storyboard; sourceTree = "<group>"; };
+		A9F7ACD11BF46FA400F1D5B3 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A9F7ACD41BF4706700F1D5B3 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		A9F7ACD81BF47D6200F1D5B3 /* CreateStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateStoryboard.storyboard; sourceTree = "<group>"; };
+		A9F7ACDA1BF47DFF00F1D5B3 /* NewJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewJourneyViewController.swift; sourceTree = "<group>"; };
+		A9F7ACDD1BF47E7A00F1D5B3 /* Journey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		BFA9E61262EDA6F6B49C0F59 /* Pods-Gradus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gradus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gradus/Pods-Gradus.release.xcconfig"; sourceTree = "<group>"; };
 		D8B2EDA717919CF4B8DA1D5D /* Pods_Gradus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gradus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,7 +196,9 @@
 		A94FAEAB1BE48EF700D980CA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A9F7ACC71BF45F6A00F1D5B3 /* ListView.swift */,
 				A92EDB231BF0774100CEAFCA /* Validation.swift */,
+				A9F7ACC91BF4608300F1D5B3 /* InterestLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -203,6 +223,8 @@
 		A94FAEAF1BE48EF700D980CA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A9F7ACD71BF47D3000F1D5B3 /* Create */,
+				A9F7ACCD1BF46F5C00F1D5B3 /* Feed */,
 				A94FAEB31BE48F5F00D980CA /* Welcome/Login */,
 			);
 			path = Views;
@@ -211,6 +233,9 @@
 		A94FAEB01BE48EF700D980CA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A9F7ACD61BF47D2500F1D5B3 /* Create */,
+				A9F7ACD31BF4704100F1D5B3 /* TabBar */,
+				A9F7ACD01BF46F8400F1D5B3 /* Feed */,
 				A94FAEB81BE4905600D980CA /* Base */,
 				A94FAEB41BE48F6A00D980CA /* Welcome/Login */,
 			);
@@ -230,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				A92EDB271BF07C2700CEAFCA /* JoinStep1ViewModel.swift */,
+				A9F7ACCB1BF46DF200F1D5B3 /* JoinStep2ViewModel.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -300,6 +326,7 @@
 		A9DC34991BEB498D00F87E85 /* Journey */ = {
 			isa = PBXGroup;
 			children = (
+				A9F7ACDD1BF47E7A00F1D5B3 /* Journey.swift */,
 			);
 			path = Journey;
 			sourceTree = "<group>";
@@ -318,6 +345,46 @@
 				A9F7ACB91BF1C71E00F1D5B3 /* InterestCollectionViewCell.swift */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		A9F7ACCD1BF46F5C00F1D5B3 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A9F7ACCE1BF46F6F00F1D5B3 /* FeedStoryboard.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		A9F7ACD01BF46F8400F1D5B3 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A9F7ACD11BF46FA400F1D5B3 /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		A9F7ACD31BF4704100F1D5B3 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A9F7ACD41BF4706700F1D5B3 /* MainTabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		A9F7ACD61BF47D2500F1D5B3 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				A9F7ACDA1BF47DFF00F1D5B3 /* NewJourneyViewController.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		A9F7ACD71BF47D3000F1D5B3 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				A9F7ACD81BF47D6200F1D5B3 /* CreateStoryboard.storyboard */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 		D8E1689F005B9C3A5BE401FF /* Frameworks */ = {
@@ -437,8 +504,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94FAEB61BE48FB400D980CA /* WelcomeStoryboard.storyboard in Resources */,
+				A9F7ACCF1BF46F6F00F1D5B3 /* FeedStoryboard.storyboard in Resources */,
 				A94FAE881BE48D4400D980CA /* LaunchScreen.storyboard in Resources */,
 				A94FAE851BE48D4400D980CA /* Assets.xcassets in Resources */,
+				A9F7ACD91BF47D6200F1D5B3 /* CreateStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,15 +596,22 @@
 				A9F7ACBA1BF1C71E00F1D5B3 /* InterestCollectionViewCell.swift in Sources */,
 				A9A500AA1BF06BBF00FFF65A /* LoginViewController.swift in Sources */,
 				A94FAEBB1BE4908F00D980CA /* GradusViewModel.swift in Sources */,
+				A9F7ACD51BF4706700F1D5B3 /* MainTabBarViewController.swift in Sources */,
+				A9F7ACDE1BF47E7A00F1D5B3 /* Journey.swift in Sources */,
 				A94FAF0A1BE88A4100D980CA /* WelcomeViewController.swift in Sources */,
 				A92EDB261BF07B7400CEAFCA /* JoinStep2ViewController.swift in Sources */,
 				A9DC34A31BEB4FF000F87E85 /* User.swift in Sources */,
 				A9F7ACBC1BF1C86D00F1D5B3 /* UIColorExtension.swift in Sources */,
+				A9F7ACCA1BF4608300F1D5B3 /* InterestLabel.swift in Sources */,
 				A92EDB241BF0774100CEAFCA /* Validation.swift in Sources */,
+				A9F7ACD21BF46FA400F1D5B3 /* FeedViewController.swift in Sources */,
 				A92EDB281BF07C2700CEAFCA /* JoinStep1ViewModel.swift in Sources */,
 				A9A500B01BF0736600FFF65A /* JoinStep1ViewController.swift in Sources */,
+				A9F7ACC81BF45F6A00F1D5B3 /* ListView.swift in Sources */,
 				A94FAEC31BE495E600D980CA /* AppDelegate.swift in Sources */,
+				A9F7ACCC1BF46DF200F1D5B3 /* JoinStep2ViewModel.swift in Sources */,
 				A9A500AD1BF06F4B00FFF65A /* Interest.swift in Sources */,
+				A9F7ACDB1BF47DFF00F1D5B3 /* NewJourneyViewController.swift in Sources */,
 				A94FAEBD1BE490B600D980CA /* GradusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

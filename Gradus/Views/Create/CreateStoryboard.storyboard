@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ov9-D4-IMz">
+            <objects>
+                <navigationController storyboardIdentifier="NewJourneyNavigationController" id="9cx-jg-shy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B8h-Da-KVm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NXo-Sd-ofa" kind="relationship" relationship="rootViewController" id="RsH-Kb-szd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpe-qc-2vF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="316"/>
+        </scene>
+        <!--New Journey View Controller-->
+        <scene sceneID="jAw-Ty-5pp">
+            <objects>
+                <viewController storyboardIdentifier="NewJourneyViewController" id="NXo-Sd-ofa" customClass="NewJourneyViewController" customModule="Gradus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3o-1p-WH8"/>
+                        <viewControllerLayoutGuide type="bottom" id="2rz-Mj-N6V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fFn-av-6p9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GxT-J9-O4x">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add-button" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-Xs-NmF">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="GxT-J9-O4x" secondAttribute="trailing" constant="-20" id="1WS-Eo-IVE"/>
+                            <constraint firstItem="2rz-Mj-N6V" firstAttribute="top" secondItem="GxT-J9-O4x" secondAttribute="bottom" id="J06-E8-OBb"/>
+                            <constraint firstItem="GxT-J9-O4x" firstAttribute="top" secondItem="y3o-1p-WH8" secondAttribute="bottom" id="iE1-rS-yma"/>
+                            <constraint firstItem="GxT-J9-O4x" firstAttribute="leading" secondItem="fFn-av-6p9" secondAttribute="leadingMargin" constant="-20" id="ja4-fd-7Xx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Lc-xh-dNT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7I-KJ-lPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="316"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add-button" width="80" height="80"/>
+    </resources>
+</document>

@@ -32,6 +32,15 @@ class GradusViewController: UIViewController {
         
     }
     
+    func createPurpleGradient(){
+        let gradient = CAGradientLayer()
+        gradient.frame = self.view.bounds
+        gradient.colors = [UIColor.darkPurpleGradient().CGColor, UIColor.lightPurpleGradient().CGColor]
+        self.view.layer.insertSublayer(gradient, atIndex: 0)
+
+    }
+    
+    
     /*
     // MARK: - Navigation
 

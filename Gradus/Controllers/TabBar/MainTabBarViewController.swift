@@ -1,20 +1,23 @@
 //
-//  WelcomeViewController.swift
+//  MainTabBarViewController.swift
 //  Gradus
 //
-//  Created by Barrett Breshears on 11/2/15.
+//  Created by Barrett Breshears on 11/11/15.
 //  Copyright © 2015 Sledgedev. All rights reserved.
 //
 
 import UIKit
-import Parse
 
-class WelcomeViewController: GradusViewController {
+class MainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated:false)
-        // Do any additional setup after loading the view.
+        
+        
+        let feedStoryboard = UIStoryboard(name: "FeedStoryboard", bundle: nil)
+        let feedNavigationController = feedStoryboard.instantiateViewControllerWithIdentifier("FeedNavigatonController")
+        feedNavigationController.tabBarItem = UITabBarItem(title: "Feed", image: nil, tag: 0)
+        self.viewControllers = [feedNavigationController]
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,11 +25,6 @@ class WelcomeViewController: GradusViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        self.createPurpleGradient()
-    }
 
     /*
     // MARK: - Navigation
