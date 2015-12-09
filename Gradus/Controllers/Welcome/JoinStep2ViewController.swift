@@ -140,7 +140,7 @@ class JoinStep2ViewController: GradusViewController, UINavigationControllerDeleg
     }
     
     func addInterests(){
-        for interest in interests{
+        for interest in self.interests{
             interestsList.addTag(interest.name, target: self, tapAction: Selector("interestTap:"), longPressAction: Selector("longPress"), backgroundColor: UIColor.clearColor(), textColor: UIColor.whiteColor(), interest: interest)
         }
     }
